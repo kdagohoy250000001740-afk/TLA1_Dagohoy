@@ -1,0 +1,190 @@
+.ledger-shell {
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.ledger-card,
+.ledger-table-card {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.ledger-card {
+  margin-bottom: 24px;
+}
+
+.card-header,
+.table-header {
+  background: #0d6efd;
+  color: #ffffff;
+  padding: 18px 24px;
+}
+
+.card-header h1,
+.table-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.card-body {
+  padding: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-group label {
+  font-weight: 600;
+  color: #212529;
+}
+
+.field-group input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe5ee;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 1rem;
+  padding: 12px 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field-group input:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  outline: none;
+}
+
+.save-button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 8px;
+  background: #0d6efd;
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 600;
+  padding: 11px 22px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.save-button:hover {
+  opacity: 0.95;
+}
+
+.save-button:active {
+  transform: translateY(1px);
+}
+
+.table-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.table-header h2 {
+  color: #495057;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #edf1f5;
+}
+
+th {
+  background: #f8f9fb;
+  color: #495057;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f9fbff;
+}
+
+.w-40 {
+  width: 35%;
+}
+
+.action-col {
+  width: 120px;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+.remove-button {
+  border: none;
+  border-radius: 6px;
+  background: #dc3545;
+  color: #ffffff;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.remove-button:hover {
+  opacity: 0.9;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6c757d;
+  padding: 28px 16px;
+}
+
+@media (max-width: 640px) {
+  .ledger-shell {
+    width: min(100%, calc(100% - 16px));
+    padding: 24px 0;
+  }
+
+  .card-body,
+  th,
+  td {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}
